@@ -13,11 +13,11 @@ olddir=~/.dotfiles_old # old dotfiles backup directory
 files="aliases exports zshrc"
 
 # create backup directory
-echo -n "Creating $olddir for backup of existing dotfiles ..."
+echo "Creating $olddir for backup of existing dotfiles ..."
 if [ ! -d $olddir ]; then
     mkdir -p $olddir
 fi
-echo "done"
+echo "...done"
 
 cd $dir
 
@@ -25,12 +25,17 @@ cd $dir
 # create symlinks from ~ to files in ~/dotfiles specified in $files
 echo "Moving existing dotfiles to $olddir"
 for file in $files; do
-    if [ -f ~/.$file ]; then
-      mv ~/.$file ~/dotfiles_old/$file
+    if [ ! -f ~/.$file ]; then
+      echo "No file to move: $file"
+    else
+      mv ~/.$file $olddir/$file
     fi
-    echo "Creating symlink to $file in ~"
+    echo "Creating symlink to $file in $HOME"
     ln -s $dir/$file ~/.$file
 done
 
 # link zsh theme
-ln -s ~/.dotfiles/joshnewman.zsh-theme ~/.oh-my-zsh/themes/
+echo "Linking theme to $HOME/.oh-my-zsh/themes..."
+rm ~/.oh-my-zsh/themes/joshnewman.zsh-theme
+ln -s ~/.dotfiles/joshnewman.zsh-theme ~/.oh-my-zsh/themes
+echo "...done"
