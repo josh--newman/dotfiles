@@ -20,3 +20,4 @@ alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias tree='tree -ACL 2 --dirsfirst'
 alias CAT='pygmentize -0 style=monokai -f console256 -g'
 alias ls='command ls -G'
+alias ll='ls -la'
