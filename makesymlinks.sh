@@ -14,7 +14,9 @@ files="aliases exports zshrc"
 
 # create backup directory
 echo -n "Creating $olddir for backup of existing dotfiles ..."
-mkdir -p $olddir
+if [ ! -d $olddir ]; then
+    mkdir -p $olddir
+fi
 echo "done"
 
 cd $dir
@@ -23,7 +25,9 @@ cd $dir
 # create symlinks from ~ to files in ~/dotfiles specified in $files
 echo "Moving existing dotfiles to $olddir"
 for file in $files; do
-    mv ~/.$file ~/dotfiles_old/$file
+    if [ -f ~/.$file ]; then
+      mv ~/.$file ~/dotfiles_old/$file
+    fi
     echo "Creating symlink to $file in ~"
     ln -s $dir/$file ~/.$file
 done
