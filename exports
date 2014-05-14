@@ -1,0 +1,21 @@
+#
+# exports.sh
+#
+# Josh Newman - 2014
+#
+
+# JAVA DERBY PATHS
+export DERBY_INSTALL=/opt/Apache/db-derby-10.10.1.1-bin
+export DERBY_HOME=$DERBY_INSTALL
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+export CLASSPATH=$DERBY_INSTALL/lib/derby.jar:$DERBY_INSTALL/lib/derbytools.jar:$DERBY_INSTALL/lib/derbynet.jar:$DERBY_INSTALL/lib/derbyclient.jar:$DERBY_INSTALL/lib/derbyrun.jar:$DERBY_INSTALL/lib/derby.war:./:
+
+# MASSIVE PATH EXPORT
+export PATH="/usr/local/opt/php56/bin:/Users/josh/.rvm/gems/ruby-2.1.0/bin:/Users/josh/.rvm/gems/ruby-2.1.0@global/bin:/Users/josh/.rvm/rubies/ruby-2.1.0/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/josh/.rvm/bin"
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+ export EDITOR='vim'
+else
+ export EDITOR='subl -n'
+fi

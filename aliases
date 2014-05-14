@@ -1,0 +1,22 @@
+#
+# aliases.sh
+#
+# Josh Newman - 2014
+#
+
+# FOLDER ALIASES
+alias railsworkspace='~/Dropbox/Development/Rails_Workspace'
+
+# DERBY ALIASES
+alias startderbyserver='java -Dderby.language.logQueryPlan=true -jar $DERBY_HOME/lib/derbyrun.jar server start'
+alias stopderbyserver='java -jar $DERBY_HOME/lib/derbyrun.jar server shutdown'
+alias ij='java org.apache.derby.tools.ij'
+
+# SHOW/HIDE FILES
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# VARIOUS
+alias tree='tree -ACL 2 --dirsfirst'
+alias CAT='pygmentize -0 style=monokai -f console256 -g'
+alias ls='command ls -G'
