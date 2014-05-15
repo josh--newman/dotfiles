@@ -54,8 +54,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-source ~/.aliases
-source ~/.exports
+source ~/.dotfiles/aliases
+source ~/.dotfiles/exports
 
 # Setup zsh-autosuggestions
 source ~/.zsh-autosuggestions/autosuggestions.zsh
