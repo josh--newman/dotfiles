@@ -5,9 +5,6 @@
 # Josh Newman - 2014
 #
 
-# FOLDER ALIASES
-alias railsworkspace='~/Dropbox/Development/Rails_Workspace'
-
 # DERBY ALIASES
 alias startderbyserver='java -Dderby.language.logQueryPlan=true -jar $DERBY_HOME/lib/derbyrun.jar server start'
 alias stopderbyserver='java -jar $DERBY_HOME/lib/derbyrun.jar server shutdown'
