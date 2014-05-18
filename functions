@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# exports.sh
+#
+# Josh Newman - 2014
+#
+
+function dbreport {
+# navigate to right directory
+cd "$DB_WORKSPACE"/$1/ # $1, the type of work (Labs or Workshops)
+
+# clone template from github
+# and name the folder based on the second argument
+git clone https://github.com/josh--newman/3612ICT_template.git $2 &&
+cd "$DB_WORKSPACE"/$1/$2 && rm -rf .git/ .gitignore
+
+# open folder in ST
+sl .
+
+}
