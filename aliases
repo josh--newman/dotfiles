@@ -14,11 +14,16 @@ alias ij='java org.apache.derby.tools.ij'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-# VARIOUS
+# DISPLAYING FILES/FOLDERS
 alias tree='tree -ACL 2 --dirsfirst'
 alias CAT='pygmentize -0 style=monokai -f console256 -g'
 alias ls='command ls -G'
 alias ll='ls -la'
+
+# UPDATING AND RELOADING
+alias reload='source ~/.zshrc; sh ~/.dotfiles/makesymlinks.sh'
+
+# EDITING FILES
 alias sl='subl -n'
 alias zshrc='sl ~/.zshrc'
-alias reload='source ~/.zshrc; sh ~/.dotfiles/makesymlinks.sh'
+alias dotfiles='sl ~/.dotfiles'
