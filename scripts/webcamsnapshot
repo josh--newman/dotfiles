@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Written by Bram Neijt
+# [http://bneijt.nl/blog/post/webcam-picture-on-every-git-commit/]
+
+timestamp="`date +%Y%m%dT%H:%M:%S%:z`"
+
+activity=$1
+if [ -z "$activity" ]; then
+    activity="none"
+fi
+if [ $# -gt 1 ]; then
+    echo "Too many arguments given"
+    exit 1
+fi
+echo "Snapshot activity: ${activity}"
+outputPath="${HOME}/Google\ Drive/gitsnapshots/${activity}"
+mkdir -p "${outputPath}"
+cd "${outputPath}"
+/usr/bin/gst-launch -e v4l2src num-buffers=1 decimate=10 ! jpegenc \
+    ! filesink location="webcam ${timestamp}.jpg" \
+    > /dev/null 2>&1 < /dev/null &
