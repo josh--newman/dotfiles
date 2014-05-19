@@ -19,13 +19,3 @@ echo "Linking theme to $HOME/.oh-my-zsh/themes..."
 rm ~/.oh-my-zsh/themes/joshnewman.zsh-theme
 ln -s $dir/joshnewman.zsh-theme ~/.oh-my-zsh/themes
 echo "...done"
-
-# link scripts to bin/
-scripts="git webcamsnapshot"
-
-for script in $scripts; do
-    echo "Creating symlink to $script in /bin"
-    sudo rm -rf /bin/$script
-    sudo ln -s $HOME/.dotfiles/scripts/$script /bin/$script
-    echo "...done"
-done

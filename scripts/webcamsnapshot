@@ -14,9 +14,10 @@ if [ $# -gt 1 ]; then
     exit 1
 fi
 echo "Snapshot activity: ${activity}"
-outputPath="${HOME}/Google\ Drive/gitsnapshots/${activity}"
+outputPath="${HOME}/Google\ Drive/gitsnapshots/"
 mkdir -p "${outputPath}"
 cd "${outputPath}"
-/usr/bin/gst-launch -e v4l2src num-buffers=1 decimate=10 ! jpegenc \
-    ! filesink location="webcam ${timestamp}.jpg" \
-    > /dev/null 2>&1 < /dev/null &
+imagesnap "commit_${timestamp}.jpg"
+# /usr/bin/gst-launch -e v4l2src num-buffers=1 decimate=10 ! jpegenc \
+#     ! filesink location="webcam ${timestamp}.jpg" \
+#     > /dev/null 2>&1 < /dev/null &
