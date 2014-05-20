@@ -1,0 +1,13 @@
+ALIASES="`cat ~/.dotfiles/gitconfig | grep ' commit ' | awk '{print $1;}'`"
+
+if [ "$1" = "commit" ] || [ $ALIASES ]; then
+  echo "Found"
+fi
+# elif
+
+# fi
+
+
+# if [[ "$1" = "commit" || cat gitconfig | grep " commit " | awk '{print $1;}' ]]; then
+#   print "found"
+# fi
