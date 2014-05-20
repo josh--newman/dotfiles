@@ -21,7 +21,7 @@ alias ls='command ls -G'
 alias ll='ls -la'
 
 # UPDATING AND RELOADING
-alias reload='source ~/.zshrc; sh ~/.dotfiles/makesymlinks.sh'
+alias reload='source ~/.dotfiles/zshrc && sh ~/.dotfiles/makesymlinks.sh'
 
 # EDITING FILES
 alias sl='subl -n'
