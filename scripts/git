@@ -6,8 +6,13 @@
 /usr/bin/git "$@"
 ESTATUS="$?"
 if [ "$ESTATUS" = "0" ]; then
-    if [ "$1" = "commit" ]; then
-        webcamsnapshot "git commit"
+    ALIASES="`cat ~/.dotfiles/gitconfig | grep ' commit ' | awk '{print $1;}'`"
+    ARG_FOUND="`echo $ALIASES | grep $1`"
+
+    if [ "$1" = "commit" ] || [ "$1" = "$ARG_FOUND" ]; then
+      webcamsnapshot "git commit"
     fi
 fi
 exit "${ESTATUS}"
+
+# $ cat gitconfig | grep " commit " | awk '{print $1;}'

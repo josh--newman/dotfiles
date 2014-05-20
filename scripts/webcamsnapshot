@@ -2,6 +2,9 @@
 
 # Written by Bram Neijt
 # [http://bneijt.nl/blog/post/webcam-picture-on-every-git-commit/]
+#
+# requires imagesnap (OSX)
+# brew install imagesnap
 
 timestamp="`date +%Y%m%dT%H:%M:%S%:z`"
 
@@ -14,7 +17,8 @@ if [ $# -gt 1 ]; then
     exit 1
 fi
 echo "Snapshot activity: ${activity}"
-outputPath="${HOME}/Google Drive/gitsnapshots/"
+outputPath="${HOME}/Google Drive/gitsnapshots"
 mkdir -p "${outputPath}"
 cd "${outputPath}"
 imagesnap "commit_${timestamp}.jpg"
+
