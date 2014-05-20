@@ -1,0 +1,13 @@
+[user]
+  name = Josh Newman
+  email = josh.newman4390@gmail.com
+[color]
+  ui = true
+[alias]
+  lol = log --oneline --graph --decorate
+  st = status -s
+  cam = commit -am
+[core]
+  editor = subl
+[push]
+  default = simple
