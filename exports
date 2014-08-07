@@ -20,7 +20,7 @@ export CLASSPATH=$CLASSPATH:$HIBERNATE_HOME/antlr-2.7.7.jar:$HIBERNATE_HOME/dom4
 export PATH=$HOME/.dotfiles/scripts
 
 # MASSIVE PATH EXPORT
-export PATH=$PATH:/usr/local/opt/php56/bin:/Users/josh/.rvm/gems/ruby-2.1.0/bin:/Users/josh/.rvm/gems/ruby-2.1.0@global/bin:/Users/josh/.rvm/rubies/ruby-2.1.0/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/josh/.rvm/bin:$PATH
+export PATH=$PATH:/usr/local/opt/php56/bin:/Users/josh/.rvm/gems/ruby-2.1.0/bin:/Users/josh/.rvm/gems/ruby-2.1.0@global/bin:/Users/josh/.rvm/rubies/ruby-2.1.0/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/josh/.rvm/bin:$PATH
 
 # FOLDER PATHS
 export RAILS_WORKSPACE='~/Dropbox/Development/Rails_Workspace'
