@@ -6,19 +6,19 @@
 # requires imagesnap (OSX)
 # brew install imagesnap
 
-timestamp="`date +%Y%m%dT%H:%M:%S%:z`"
+# timestamp="`date +%Y%m%dT%H:%M:%S%:z`"
 
-activity=$1
-if [ -z "$activity" ]; then
-    activity="none"
-fi
-if [ $# -gt 1 ]; then
-    echo "Too many arguments given"
-    exit 1
-fi
-echo "Snapshot activity: ${activity}"
-outputPath="${HOME}/Google Drive/gitsnapshots"
-mkdir -p "${outputPath}"
-cd "${outputPath}"
-imagesnap "commit_${timestamp}.jpg"
+# activity=$1
+# if [ -z "$activity" ]; then
+#     activity="none"
+# fi
+# if [ $# -gt 1 ]; then
+#     echo "Too many arguments given"
+#     exit 1
+# fi
+# echo "Snapshot activity: ${activity}"
+# outputPath="${HOME}/Google Drive/gitsnapshots"
+# mkdir -p "${outputPath}"
+# cd "${outputPath}"
+# imagesnap "commit_${timestamp}.jpg"
 
