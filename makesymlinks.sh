@@ -8,8 +8,11 @@
 
 dir=$HOME/.dotfiles        # dotfiles directory
 
-dotfiles=(zshrc gitconfig)
+# hush login
+echo "++ Adding ~/.hushlogin"
+touch ~/.hushlogin
 
+dotfiles=(zshrc gitconfig)
 for file in ${dotfiles[@]}; do
   echo "-- Removing existing .${file}"
   rm "$HOME/.${file}"

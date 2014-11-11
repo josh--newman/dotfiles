@@ -58,6 +58,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/aliases
 source ~/.dotfiles/exports
 source ~/.dotfiles/functions
+source ~/siri-bash.profile
 
 # Setup zsh-autosuggestions
 source ~/.zsh-autosuggestions/autosuggestions.zsh
