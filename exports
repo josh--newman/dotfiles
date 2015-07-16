@@ -10,8 +10,11 @@
 export PATH=$HOME/.dotfiles/scripts
 
 # MASSIVE PATH EXPORT
-export PATH="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH"
+export PATH="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH"
 export PATH="$PATH:/Users/josh/.rvm/gems/ruby-2.2.2/bin:/Users/josh/.rvm/gems/ruby-2.2.2@global/bin:/Users/josh/.rvm/rubies/ruby-2.2.2/bin:/Users/josh/.rvm/bin"
+
+# Postgres
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 
 # JAVA PATHS
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
