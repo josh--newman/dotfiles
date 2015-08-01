@@ -16,6 +16,10 @@ export PATH="$PATH:/Users/josh/.rvm/gems/ruby-2.2.2/bin:/Users/josh/.rvm/gems/ru
 # Postgres
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 
+# GOLANG PATHS
+export GOPATH="$HOME/Dropbox/Development/go"
+export PATH="$PATH:$GOPATH/bin"
+
 # JAVA PATHS
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
