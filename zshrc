@@ -49,32 +49,15 @@ DEFAULT_USER='josh'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump brew osx rails web-search zsh-syntax-highlighting)
+plugins=(git autojump brew osx rails web-search zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 source ~/.dotfiles/aliases
 source ~/.dotfiles/exports
 source ~/.dotfiles/functions
-if [ -f ~/siri-bash.profile ]; then
-  source ~/siri-bash.profile
-fi
-
-# Setup zsh-autosuggestions
-source ~/.zsh-autosuggestions/autosuggestions.zsh
-
-# Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-
-# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
-# zsh-autosuggestions is designed to be unobtrusive)
-bindkey '^T' autosuggest-toggle
-
+#
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
