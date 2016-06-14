@@ -57,7 +57,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/aliases
 source ~/.dotfiles/exports
 source ~/.dotfiles/functions
-#
+
+# Source 'z' package
+[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

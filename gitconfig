@@ -8,6 +8,8 @@
   st = status -s
   cam = commit -am
   aei = "!f() { git add --all && git reset -- product/config/intellij_13_java7/.idea/*; }; f"
+  co = checkout
+  cob = checkout -b
 [core]
   editor = subl -w
 	excludesfile = /Users/josh/.gitignore_global
@@ -16,9 +18,3 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
