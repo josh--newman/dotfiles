@@ -11,7 +11,7 @@
   co = checkout
   cob = checkout -b
 [core]
-  editor = subl -w
+  editor = atom --wait
 	excludesfile = /Users/josh/.gitignore_global
 [push]
   default = simple
