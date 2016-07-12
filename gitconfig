@@ -7,7 +7,6 @@
   lol = log --oneline --graph --decorate
   st = status -s
   cam = commit -am
-  aei = "!f() { git add --all && git reset -- product/config/intellij_13_java7/.idea/*; }; f"
   co = checkout
   cob = checkout -b
 [core]
