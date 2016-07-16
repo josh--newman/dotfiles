@@ -22,8 +22,8 @@ export PATH="$PATH:$GOPATH/bin"
 
 # JAVA PATHS
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$PATH"
 
 # FOLDER PATHS
 export RAILS_WORKSPACE='~/Dropbox/Development/Rails_Workspace'
