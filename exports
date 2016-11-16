@@ -16,6 +16,9 @@ export PATH="$PATH:/Users/josh/.rvm/gems/ruby-2.2.2/bin:/Users/josh/.rvm/gems/ru
 # Postgres
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 
+# MongoDB
+export PATH="$PATH:$HOME/.mongodb/versions/mongodb-current/bin"
+
 # GOLANG PATHS
 export GOPATH="$HOME/Dropbox/Development/go"
 export PATH="$PATH:$GOPATH/bin"
