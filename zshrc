@@ -74,3 +74,6 @@ source ~/.dotfiles/functions
 
 export NVM_DIR="/Users/josh/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# thefuck
+eval "$(thefuck --alias)"
