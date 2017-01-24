@@ -12,12 +12,12 @@ dir=$HOME/.dotfiles        # dotfiles directory
 echo "++ Adding ~/.hushlogin"
 touch ~/.hushlogin
 
-dotfiles=(zshrc gitconfig)
+dotfiles=(.zshrc .gitconfig .eslintrc)
 for file in ${dotfiles[@]}; do
-  echo "-- Removing existing .${file}"
-  rm "$HOME/.${file}"
-  echo "++ Symlinking .${file}"
-  ln -s $dir/$file "$HOME/.${file}"
+  echo "-- Removing existing ${file}"
+  rm "$HOME/${file}"
+  echo "++ Symlinking ${file}"
+  ln -s $dir/$file "$HOME/${file}"
 done
 unset file
 
