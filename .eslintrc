@@ -10,7 +10,7 @@
 
   "parserOptions": {
     "ecmaVersion": 2017,
-    "sourceType": 'module',
+    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
       "generators": true,
@@ -135,46 +135,5 @@
     "no-mixed-spaces-and-tabs": "warn",
     "constructor-super": "error",
     "indent": ["warn", 2, { "SwitchCase": 1 }],
-
-    # https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/
-
-    # https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
-    "react/jsx-equals-spacing": ["warn", "never"],
-    "react/jsx-no-duplicate-props": ["warn", { "ignoreCase": true }],
-    "react/jsx-no-undef": "error",
-    "react/jsx-pascal-case": ["warn", {
-      "allowAllCaps": true,
-      "ignore": [],
-    }],
-    "react/jsx-uses-react": "warn",
-    "react/jsx-uses-vars": "warn",
-    "react/no-deprecated": "warn",
-    "react/no-direct-mutation-state": "warn",
-    "react/no-is-mounted": "warn",
-    "react/react-in-jsx-scope": "error",
-    "react/require-render-return": "warn",
-    "react/prop-types": "warn",
-    "react/display-name": "warn",
-    "react/no-danger-with-children": "warn",
-    "react/no-unknown-property": "warn",
-    "react/no-unused-prop-types": ["warn", { "skipShapeProps": true }],
-    "react/jsx-no-comment-textnodes": "warn",
-    "react/jsx-key": "warn",
-
-
-    # https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
-    "jsx-a11y/aria-role": "warn",
-    "jsx-a11y/img-has-alt": "warn",
-    "jsx-a11y/img-redundant-alt": "warn",
-    "jsx-a11y/no-access-key": "warn",
-
-    # https://github.com/gajus/eslint-plugin-flowtype
-    "flowtype/define-flow-type": "warn",
-    "flowtype/require-valid-file-annotation": "warn",
-    "flowtype/use-flow-type": "warn",
-
-    # https://github.com/lo1tuma/eslint-plugin-mocha
-    "mocha/no-exclusive-tests": "error",
-    "mocha/no-mocha-arrows": "warn"
   }
 }
