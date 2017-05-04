@@ -77,3 +77,5 @@ export NVM_DIR="/Users/josh/.nvm"
 
 # thefuck
 eval "$(thefuck --alias)"
+
+export PATH="$HOME/.yarn/bin:$PATH"

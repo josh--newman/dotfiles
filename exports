@@ -22,6 +22,9 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
 # MongoDB
 export PATH="$PATH:$HOME/.mongodb/versions/mongodb-current/bin"
 
+# Yarn
+export PATH="$PATH:`yarn global bin`"
+
 # GOLANG PATHS
 export GOPATH="$HOME/Dropbox/Development/go"
 export PATH="$PATH:$GOPATH/bin"
