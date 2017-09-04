@@ -1,6 +1,8 @@
 [user]
   name = Josh Newman
 	email = josh.newman4390@gmail.com
+[includeIf "gitdir:~/pw/"]
+  path = ~/pw/.gitconfig
 [color]
   ui = true
 [alias]
@@ -19,7 +21,6 @@
 	smudge = git-media-smudge %f
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
