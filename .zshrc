@@ -49,7 +49,7 @@ DEFAULT_USER='josh'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump brew osx rails web-search zsh-syntax-highlighting zsh-autosuggestions z)
+plugins=(git autojump brew osx rails web-search zsh-autosuggestions z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,8 +74,5 @@ source ~/.dotfiles/functions
 
 export NVM_DIR="/Users/josh/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# thefuck
-eval "$(thefuck --alias)"
 
 export PATH="$HOME/.yarn/bin:$PATH"
