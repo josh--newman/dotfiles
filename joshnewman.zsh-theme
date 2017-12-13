@@ -40,4 +40,4 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%}◒ "
 
 PROMPT='
 $(_user_host)$fg[yellow]$(get_pwd) $(git_prompt_info)
-💻  $FG[032]%n ▶︎ %{$reset_color%} '
+💻  $FG[032]%n ▶%{$reset_color%} '
