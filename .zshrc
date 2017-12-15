@@ -72,7 +72,8 @@ source ~/.dotfiles/functions
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export NVM_DIR="/Users/josh/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+export NVM_SH="/usr/local/opt/nvm"
+[ -s "$NVM_SH/nvm.sh" ] && . "$NVM_SH/nvm.sh"  # This loads nvm
 
 export PATH="$HOME/.yarn/bin:$PATH"
