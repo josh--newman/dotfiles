@@ -1,8 +1,8 @@
 [user]
   name = Josh Newman
 	email = josh.newman4390@gmail.com
-[includeIf "gitdir:~/pw/"]
-  path = ~/pw/.gitconfig
+[includeIf "gitdir:~/code/"]
+  path = ~/code/.gitconfig
 [color]
   ui = true
 [alias]
