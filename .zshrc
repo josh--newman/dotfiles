@@ -49,7 +49,7 @@ DEFAULT_USER='josh'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump brew osx rails web-search zsh-autosuggestions z zsh-syntax-highlighting)
+plugins=(git brew osx z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,6 +61,9 @@ source ~/.dotfiles/functions
 # Source 'z' package
 [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 
+# Source saml-aws-functions
+source $HOME/.saml-aws-functions/bash-functions
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -71,9 +74,3 @@ source ~/.dotfiles/functions
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-export NVM_DIR="$HOME/.nvm"
-export NVM_SH="/usr/local/opt/nvm"
-[ -s "$NVM_SH/nvm.sh" ] && . "$NVM_SH/nvm.sh"  # This loads nvm
-
-export PATH="$HOME/.yarn/bin:$PATH"

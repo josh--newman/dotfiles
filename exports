@@ -16,9 +16,6 @@ export PATH="$PATH:/Users/josh/.rvm/gems/ruby-2.2.2/bin:/Users/josh/.rvm/gems/ru
 # Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
-# Postgres
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
-
 # MongoDB
 export PATH="$PATH:$HOME/.mongodb/versions/mongodb-current/bin"
 
@@ -44,3 +41,18 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
  export EDITOR='subl'
 fi
+
+export NVM_DIR="$HOME/.nvm"
+export NVM_SH="/usr/local/opt/nvm"
+[ -s "$NVM_SH/nvm.sh" ] && . "$NVM_SH/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# SSSH
+export SSSH_DEFAULT_ENDPOINT=hdqqb0c1y6.execute-api.ap-southeast-2.amazonaws.com
+
+# PSQL
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
