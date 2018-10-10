@@ -62,7 +62,7 @@ source ~/.dotfiles/functions
 [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 
 # Source saml-aws-functions
-source $HOME/.saml-aws-functions/bash-functions
+[ -f $HOME/.saml-aws-functions/bash-functions ] && source $HOME/.saml-aws-functions/bash-functions
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
