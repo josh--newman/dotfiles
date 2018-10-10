@@ -49,7 +49,7 @@ DEFAULT_USER='josh'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump brew osx rails web-search zsh-autosuggestions z zsh-syntax-highlighting)
+plugins=(git brew osx z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,6 +60,9 @@ source ~/.dotfiles/functions
 
 # Source 'z' package
 [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+
+# Source saml-aws-functions
+source $HOME/.saml-aws-functions/bash-functions
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
