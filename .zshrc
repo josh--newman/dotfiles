@@ -73,7 +73,8 @@ source ~/.dotfiles/functions
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export NVM_DIR="$HOME/.nvm"
-export NVM_SH="/usr/local/opt/nvm"
-[ -s "$NVM_SH/nvm.sh" ] && . "$NVM_SH/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(rbenv init -)"
 
 export PATH="$HOME/.yarn/bin:$PATH"
