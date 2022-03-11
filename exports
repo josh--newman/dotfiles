@@ -9,31 +9,11 @@
 # SCRIPTS PATH
 export PATH=$HOME/.dotfiles/scripts
 
-# MASSIVE PATH EXPORT
-export PATH="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH"
-export PATH="$PATH:/Users/josh/.rvm/gems/ruby-2.2.2/bin:/Users/josh/.rvm/gems/ruby-2.2.2@global/bin:/Users/josh/.rvm/rubies/ruby-2.2.2/bin:/Users/josh/.rvm/bin"
+# PATH EXPORT
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH"
 
-# Yarn
+# YARN
 export PATH="$HOME/.yarn/bin:$PATH"
-
-# MongoDB
-export PATH="$PATH:$HOME/.mongodb/versions/mongodb-current/bin"
-
-# Yarn
-export PATH="$PATH:`yarn global bin`"
-
-# GOLANG PATHS
-export GOPATH="$HOME/Dropbox/Development/go"
-export PATH="$PATH:$GOPATH/bin"
-
-# JAVA PATHS
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$PATH"
-
-# FOLDER PATHS
-export RAILS_WORKSPACE='~/Dropbox/Development/Rails_Workspace'
-export DB_WORKSPACE=~/Google\ Drive/University\ Work/2014_Sem1/3612ICT_Database\ Systems\ and\ Admin/
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -41,14 +21,3 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
  export EDITOR='subl'
 fi
-
-export PATH="$HOME/.yarn/bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# SSSH
-export SSSH_DEFAULT_ENDPOINT=hdqqb0c1y6.execute-api.ap-southeast-2.amazonaws.com
-
-# PSQL
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"

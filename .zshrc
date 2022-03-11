@@ -42,14 +42,16 @@ DISABLE_AUTO_TITLE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+ZSH_DISABLE_COMPFIX="true"
+
 # Set DEFAULT_USER to your regular user name to hide the host name info
 # when you're logged in as yourself on your local machine
-DEFAULT_USER='josh'
+DEFAULT_USER='joshnewman'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew osx z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git brew vscode macos z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,12 +59,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/aliases
 source ~/.dotfiles/exports
 source ~/.dotfiles/functions
-
-# Source 'z' package
-[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
-
-# Source saml-aws-functions
-[ -f $HOME/.saml-aws-functions/bash-functions ] && source $HOME/.saml-aws-functions/bash-functions
+source ~/.npmtoken
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -78,6 +75,6 @@ source ~/.dotfiles/functions
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-eval "$(rbenv init -)"
 
-export PATH="$HOME/.yarn/bin:$PATH"
+eval "$(direnv hook zsh)"
+source $HOME/.cargo/env

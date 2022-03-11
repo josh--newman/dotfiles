@@ -23,6 +23,11 @@ alias ll='ls -la'
 alias reload='source ~/.dotfiles/.zshrc && sh ~/.dotfiles/makesymlinks.sh'
 
 # EDITING FILES
-alias sl='atom -n'
-alias zshrc='atom ~/.zshrc'
-alias dotfiles='atom ~/.dotfiles'
+alias zshrc='code ~/.zshrc'
+alias dotfiles='code ~/.dotfiles'
+
+# DOCKER
+alias dc='docker-compose'
+
+# YARN
+alias yw='yarn workspace'
