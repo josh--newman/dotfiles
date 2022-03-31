@@ -31,3 +31,6 @@ alias dc='docker-compose'
 
 # YARN
 alias yw='yarn workspace'
+
+# AWS VAULT
+alias vault='aws-vault exec monolith-production-developer --'
