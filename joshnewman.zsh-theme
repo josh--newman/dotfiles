@@ -2,7 +2,7 @@
 #
 # joshnewman.zsh-theme
 #
-# Josh Newman - 2014
+# Josh Newman
 #
 
 function get_pwd() {
